@@ -14,21 +14,18 @@ html {
 @media (max-width:768px) {
 
     body {
-        font-family: "Raleway", sans-serif;
+        font-family: "Roboto", sans-serif;
         overflow-x:hidden;
     }
 
 
-    /* .header{
-
-
-    } */
     .logo{
         display:flex;
         justify-content: center;
         padding:20px 0px 10px 0px;
+        font-family: "Shrikhand", sans-serif;
     }
-z
+
     .location-search {
         display:flex;
         flex-flow: row nowrap;
@@ -66,7 +63,7 @@ z
         padding:10px 20px;
         border-style:none;
         border-radius: 15px;
-        background-image: linear-gradient(rgb(243, 142, 224), rgb(151, 57, 151));
+        background-image: linear-gradient(#FF79DA, #9356DC);
     }
     .restaurants-search a{
         text-decoration: none;
@@ -130,12 +127,11 @@ z
         border-top-right-radius: 15px;
     }
 
-    .info-box {
+    .flex-heart {
         display:flex;
         flex-flow:row nowrap;
         padding:20px 10px;
-        position:relative
-        /* gap:120px; */
+        position:relative;
     }
 
     .restaurant-name {
@@ -150,7 +146,8 @@ z
 
     .heart a:hover,
     .heart a:active {
-        background-image: linear-gradient(rgb(243, 142, 224), rgb(151, 57, 151));
+        border:none;
+        background-image: linear-gradient(#FF79DA, #9356DC);
     }
 
     footer{
@@ -163,6 +160,7 @@ z
     }
 
     .logo-footer {
+        font-family: "Shrikhand", sans-serif;
         filter:invert(10);
         width:50px;
         height: 20px;
