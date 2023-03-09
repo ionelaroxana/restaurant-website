@@ -11,9 +11,11 @@ html {
     -moz-box-sizing: inherit;
     box-sizing: inherit;
 }
-@media (max-width:768px) {
+/* @media (max-width:768px) { */
+
 
     .nav-logo {
+        font-family: "Shrikhand", sans-serif;
         display:flex;
         flex-flow:row nowrap;
         padding:10px;
@@ -72,6 +74,7 @@ html {
     }
 
     .food-category {
+        color:gray;
         padding-bottom:5px;
         margin-bottom:10px;
         position:relative;
@@ -127,4 +130,3 @@ html {
         font-size: smaller;
 
     }
-}

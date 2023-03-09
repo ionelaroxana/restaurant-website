@@ -11,8 +11,7 @@ html {
     -moz-box-sizing: inherit;
     box-sizing: inherit;
 }
-@media (max-width:768px) {
-
+/* mobile (max-width:768px)  */
     body {
         font-family: "Roboto", sans-serif;
         overflow-x:hidden;
@@ -73,13 +72,13 @@ html {
     }
 
     .text-style2{
-        margin-left:10px;
+        margin-left:20px;
     }
  
     .step-list {
         display:flex;
         flex-flow:column nowrap;
-        margin-left:17px;
+        margin-left:20px;
         margin-right:14px;
         justify-content: baseline;
         row-gap: 15px;
@@ -119,7 +118,9 @@ html {
         background-color:#9356DC;
     }
 
-
+    .title-style {
+        margin-left:10px;
+    }
     .restaurant-options{
         background-color: #F2F2F2;
         display:flex;
@@ -136,6 +137,16 @@ html {
         background-color: white;
         border-radius: 15px;
         box-shadow: 3px -3px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .restaurant-item a{
+        text-decoration: none;
+        color:black;
+    }
+
+    .restaurant-item a:hover,
+    .restaurant-item a:active {
+        color: #9356DC;
     }
 
     .images {
@@ -186,191 +197,115 @@ html {
         margin-bottom:5px;
     }
 
+    .logo-text {
+        padding-top:5px;
+    }
+
+    .textfooter {
+        padding-top:5px;
+    }
+
+    .logo-text a{
+        text-decoration: none;
+        color:white;
+    }
+
     .textfooter a{
         text-decoration: none;
         color:white;
     }
-}
 
 /*  tablet */
 
 @media (min-width: 768px) and (max-width:992px) {
 
-    body {
-        font-family: "Roboto", sans-serif;
-        overflow-x:hidden;
-    }
-
-
-    .logo{
-        display:flex;
-        justify-content: center;
-        padding:20px 0px 10px 0px;
-        font-family: "Shrikhand", sans-serif;
-    }
-
-    .location-search {
-        display:flex;
-        flex-flow: row nowrap;
-        width:100%; 
-        justify-content: center;
-        padding:10px 0px 10px 50px;
-        background-color: rgb(234, 234, 234);
-        box-shadow:inset 0px 3px 5px rgba(0, 0, 0, 0.1);
-    }
-    .searchbar {
-        border-style: none;
-        background-color: rgb(234, 234, 234);
-        padding-left:10px;
-    }
-    ::placeholder {
-        color:black;
-        font-weight: bolder;
-        font-size:16px;
-    }
-
-    .background-box {
-        background-color: #F2F2F2;
-        display:flex;
-        flex-flow:column wrap;
-        align-items: center;
-        row-gap: 20px;
-    }
-    .text-header {
-        padding:0px 20px 0px 40px;
-        text-align: center;
-    }
-
-    .restaurants-search {
-        margin-bottom:40px;
-        padding:10px 20px;
-        border-style:none;
-        border-radius: 15px;
-        background-image: linear-gradient(#FF79DA, #9356DC);
-    }
-    .restaurants-search a{
-        text-decoration: none;
-        color:white;
-        font-weight: bold;
-        font-size: smaller;
-    }
-
-    .text-style2{
-        margin-left:10px;
-    }
- 
-    .step-list {
-        display:flex;
-        flex-flow:column nowrap;
-        margin-left:17px;
-        margin-right:14px;
-        justify-content: baseline;
-        row-gap: 15px;
-    }
-    .step a{
-        display:flex;
-        flex-flow: row nowrap;
-        column-gap: 15px;
-        padding:25px 20px 25px 10px;
-        border-style:none;
-        border-radius: 15px;
-        background-color: #F2F2F2;
-        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
-        text-decoration: none;
-        color:black;
-        font-weight: bold;
-    }
-
-    .icons-form {
-        color:gray;
-    }
-
-    .step a:hover,
-    .step a:active{
-        background-color: #e9e3f0;
-        
-    }
-
-    .step-count {
-        margin-left:-18px;
-        margin-bottom: -4px;
-        margin-top:-5px;
-        color:white;
-        padding:4px 8px 3px 8px;
-        border-width:2px;
-        border-radius: 50%;
-        background-color:#9356DC;
-    }
-
-
     .restaurant-options{
         background-color: #F2F2F2;
-        display:flex;
-        flex-flow: column nowrap;
+        padding-top:20px;
         margin-top:40px;
-        padding:20px 0px 60px 10px;
-        width:100%;
+    }
+
+    .restaurant-display {
+        display:flex;
+        flex-flow:row wrap;
+        margin-top:20px;
+        margin-left:10px;
     }
 
     .restaurant-item{
+        height:280px;
+        width:46%;
+        margin:0px 28px 25px 0px;
+    }
+
+    .heart {
+        position:absolute; 
+        right:-150px;
+    }
+
+    .footer-display {
         display:flex;
-        flex-flow:column nowrap;
-        margin:0px 15px 20px 0px;
-        background-color: white;
-        border-radius: 15px;
-        box-shadow: 3px -3px 5px rgba(0, 0, 0, 0.1);
+        flex-flow:row wrap;
+    }
+    .logo-text {
+        width:50%;
     }
 
-    .images {
-        height:200px;
-        width:100%;
-        object-fit:cover;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+    .textfooter {
+        width:50%;
     }
 
-    .flex-heart {
+}
+
+
+/*  desktop */
+
+@media (min-width:992px) {
+
+
+    .step-list {
         display:flex;
         flex-flow:row nowrap;
-        padding:20px 10px;
-        position:relative;
+        column-gap: 50px;
     }
 
-    .restaurant-name {
-        font-weight: bold;
-    }
-    .heart {
-        width:50%;
-        height: 55px;
-        position:absolute; 
-        right:-130px;
-        top:30px;
+    .step {
+        width:33%;
     }
 
-    .heart a:hover,
-    .heart a:active {
-        background-image: linear-gradient(#FF79DA, #9356DC);
+    .restaurant-options{
+        background-color: #F2F2F2;
+        padding-top:20px;
+        margin-top:40px;
     }
 
-    footer{
-        background-color:rgb(39, 38, 38);
-        color:white;
-        padding:20px 0px 60px 20px;
+    .restaurant-display {
         display:flex;
-        flex-flow: column nowrap;
-        gap:10px;
+        flex-flow:row nowrap;
+        margin-top:20px;
+        margin-left:10px;
     }
 
-    .logo-footer {
-        font-family: "Shrikhand", sans-serif;
-        filter:invert(10);
-        width:50px;
-        height: 20px;
-        margin-bottom:5px;
+    .restaurant-item{
+        height:280px;
+        width:25%;
+        margin:0px 28px 25px 0px;
     }
 
-    .textfooter a{
-        text-decoration: none;
-        color:white;
+    .heart {
+        position:absolute; 
+        right:-90px;
+    }
+
+    .footer-display {
+        display:flex;
+        flex-flow:row nowrap;
+    }
+    .logo-text {
+        width:25%;
+    }
+
+    .textfooter {
+        width:25%;
     }
 }
