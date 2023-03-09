@@ -100,6 +100,9 @@ html {
     .food-names {
         font-weight: bold;
     }
+    .sides {
+        color:gray;
+    }
 
     .price {
         width:50%;
