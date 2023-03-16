@@ -13,37 +13,7 @@ html {
 }
 /* @media (max-width:768px) { */
 
-    @keyframes loadingpage {
-        from {
-            transform: translateY(30px);
-        }
-         to {
-            transform:translateY(0);
-         }
-    }
-    .animate {
-        animation-duration: 1.5s;
-    }
 
-    .animate.animation-fast {
-        animation-duration: 0.7s;
-    }
-
-    .animate.animation-medium {
-        animation-duration: 0.9s;
-    }
-
-    .animate.animation-slow {
-        animation-duration: 1.3s;
-    }
-
-    .animate.animation-slowest {
-        animation-delay:0.7s;
-        animation-duration:1.5s;
-    }
-    .loadingpage {
-        animation: loadingpage 1s ease-in normal;
-    }
 
     @keyframes rightToleft {
         from {
