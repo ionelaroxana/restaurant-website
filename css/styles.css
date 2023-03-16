@@ -133,6 +133,7 @@ html {
     .restaurant-item{
         display:flex;
         flex-flow:column nowrap;
+        position:relative;
         margin:0px 15px 20px 0px;
         background-color: white;
         border-radius: 15px;
@@ -155,29 +156,57 @@ html {
         object-fit:cover;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+        z-index:1;
     }
 
+    .new-tag {
+        position:absolute;
+        z-index:2;
+        background-color: rgb(100, 247, 198);
+        color:green;
+        float:right;
+        margin-left:80%;
+        margin-top:15px;
+        padding:5px 20px;
+    }
     .flex-heart {
         display:flex;
         flex-flow:row nowrap;
         padding:20px 10px;
-        position:relative;
     }
 
     .restaurant-name {
         font-weight: bold;
     }
-    .heart {
-        width:50%;
-        height: 55px;
-        position:absolute; 
-        right:-130px;
-        top:30px;
+    .regular-heart {
+        position:absolute;
+        z-index:1;
+        float:right;
+        margin-left:90%;
     }
 
-    .heart a:hover,
-    .heart a:active {
-        background-image: linear-gradient(#FF79DA, #9356DC);
+    .solid-heart {
+        position:absolute;
+        /* display:none; */
+        z-index:-1;
+        float:right;
+        margin-left:90%;
+    }
+
+    .solid-heart a:hover,
+    .solid-heart a:active {
+        /* display:unset; */
+        position:absolute;
+        z-index:2;
+        color: linear-gradient(#FF79DA, #9356DC);
+        
+    }
+    .regular-heart a:hover,
+    .regular-heart a:active {
+        position:absolute;
+        color: linear-gradient(#FF79DA, #9356DC);
+        z-index:-1;
+        /* display:none; */
     }
 
     footer{
@@ -238,9 +267,15 @@ html {
         margin:0px 28px 25px 0px;
     }
 
-    .heart {
-        position:absolute; 
-        right:-150px;
+    .new-tag {
+        margin-left:78%;
+    }
+
+    .regular-heart {
+        margin-left:87%;
+    }
+    .solid-heart {
+        margin-left:87%;
     }
 
     .footer-display {
@@ -291,10 +326,15 @@ html {
         width:25%;
         margin:0px 28px 25px 0px;
     }
+    .new-tag {
+        margin-left:70%;
+    }
 
-    .heart {
-        position:absolute; 
-        right:-90px;
+    .regular-heart {
+        margin-left:85%;
+    }
+    .left-heart {
+        margin-left:85%;
     }
 
     .footer-display {
