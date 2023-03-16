@@ -80,7 +80,6 @@ html {
         flex-flow:column nowrap;
         margin-left:20px;
         margin-right:14px;
-        justify-content: baseline;
         row-gap: 15px;
     }
     .step a{
@@ -187,7 +186,7 @@ html {
 
     .solid-heart {
         position:absolute;
-        display:none;
+        /* display:none; */
         /* z-index:-1; */
         float:right;
         margin-left:90%;
@@ -198,7 +197,10 @@ html {
         display:block;
         position:absolute;
         /* z-index:2; */
-        color: linear-gradient(#FF79DA, #9356DC);
+        /* background: linear-gradient(#FF79DA, #9356DC); */
+        background: -webkit-linear-gradient(#FF79DA, #9356DC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         
     }
     .regular-heart a:hover,
