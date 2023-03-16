@@ -164,7 +164,7 @@ html {
         float:right;
         margin-left:87%;
         background-color:#FF79DA;
-
+        display:none;
     }
 
     .food-item a{
