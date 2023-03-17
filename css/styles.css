@@ -201,6 +201,7 @@ html {
         padding:5px 20px;
     }
     .flex-heart {
+
         display:flex;
         flex-flow:row nowrap;
         padding:20px 10px;
@@ -209,37 +210,38 @@ html {
     .restaurant-name {
         font-weight: bold;
     }
-    .regular-heart {
-        position:absolute;
-        /* z-index:1; */
-        float:right;
-        margin-left:90%;
-    }
 
+    .heart-animation {
+        display:inline;
+        position:absolute;
+        float:right;
+        margin-left:85%;
+    }
     .solid-heart {
         position:absolute;
-        /* display:none; */
-        /* z-index:-1; */
         float:right;
-        margin-left:90%;
+        margin-left:85%;
+        display:none;
     }
 
-    .solid-heart a:hover,
-    .solid-heart a:active {
-        display:block;
+    .regular-heart { 
         position:absolute;
-        /* z-index:2; */
-        /* background: linear-gradient(#FF79DA, #9356DC); */
+        float:right;
+        margin-left:85%;
+    }  
+
+    .heart-animation a:hover > .regular-heart{
+        display:none;
         background: -webkit-linear-gradient(#FF79DA, #9356DC);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-        
     }
-    .regular-heart a:hover,
-    .regular-heart a:active {
-        position:absolute;
-        /* z-index:-1; */
-        display:none;
+
+    .heart-animation a:hover > .solid-heart{
+        display:block;
+        background: -webkit-linear-gradient(#FF79DA, #9356DC);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     footer{
