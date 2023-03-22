@@ -202,6 +202,30 @@ html {
         transform:scaleX(1);
     } */
 
+    .checkmark-box {
+        position:relative;
+    }
+    .checkmark_circle {
+        position:absolute;
+        background-color: white;
+    }
+
+
+
+   @keyframes checkmarkrotate {
+        from {
+            transform:rotate(0turn);
+        }
+        to{
+            transform:rotate(0.5turn);
+        }
+    }
+
+    .rotation {
+        animation:checkmarkrotate 1s;
+    } 
+
+
 
 
     .food-names {
@@ -217,13 +241,13 @@ html {
         position:absolute; 
         float:right;
         margin-left:87%;
-        top:25px;
+        top:30px;
         z-index:2;
     }
 
     .food-item:hover .price {
-        transition: 0.8s linear;
-        right: 0;
+        transition: 0.8s ;
+        right:0;
     }
 
     .make-order {
