@@ -125,6 +125,7 @@ html {
         border-radius: 15px;
         position:relative;
         background-color: #fffefe;
+
     }
 
 
@@ -132,17 +133,9 @@ html {
         text-decoration: none;
         color:black
     }
-    /* .checkmark-container {
-        position:absolute;
-        height:100%;
-        width:20%;
-        float:right;
-        border: 1px solid black;
-        z-index:1;
-        margin:0px;
-    } */
+
      
-    @keyframes checkmarkslide {
+    /* @keyframes checkmarkslide {
         from {
             transform:translateX(0px);
         }
@@ -157,9 +150,9 @@ html {
 
     .rightToleft {
         animation:checkmarkslide 1s ease-in;
-    }
+    } */
 
-    .checkmark-box {
+    .checkmark-container {
         margin:0px;
         position: absolute;
         float:right;
@@ -167,16 +160,49 @@ html {
         width: 100px;
         height: 100%;
         margin: -50px 0px;
-        background-color: #99E2D0;
-        transition: 1s;
-        display:none;
+        border:2px;
+        border-color: black;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        transition: color 0.8s linear;
     }
 
-    .food-item:hover .checkmark-box {
+
+
+    .food-item:hover .checkmark-container {
         display:block;
-        transition: 1s;
+        transition: 0.8s linear;
         right: 0;
+        background-color: #99E2D0;
     }
+
+    .checkmark-container::before {
+        content:"";
+        position:absolute;
+        right:0;
+        top:0;
+        width:10%;
+        height:100%;
+        background-color: #99E2D0;
+        z-index:-1;
+        transition: transform 0.8s;
+        transform-origin: 0 0;
+        transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+        transform:scaleX(0);
+    }
+
+    .checkmark-box::before {
+        transform:scaleX(0)
+    }
+
+    .checkmark-box:hover::before {
+        transform:scaleX(1)
+    }
+    /* .food-item:hover::before {
+        transform:scaleX(1);
+    } */
+
+
 
     .food-names {
         font-weight: bold;
@@ -191,8 +217,13 @@ html {
         position:absolute; 
         float:right;
         margin-left:87%;
-        top:30px;
+        top:25px;
         z-index:2;
+    }
+
+    .food-item:hover .price {
+        transition: 0.8s linear;
+        right: 0;
     }
 
     .make-order {

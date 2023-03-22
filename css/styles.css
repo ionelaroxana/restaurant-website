@@ -116,9 +116,10 @@ html {
     transform: rotate(0.16turn);
     animation: loading-ring 1s ease infinite;
   }
-  
-  @keyframes loading-ring {
-    /* Safari support */
+ */
+
+  /* @keyframes loading-ring {
+    
     from {
       transform: rotate(0turn);
     }
@@ -153,7 +154,6 @@ html {
 }
 
 .animate.animation-slowest {
-    animation-delay:0.7s;
     animation-duration:1.5s;
 }
 .loadingpage {
