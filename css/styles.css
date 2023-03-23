@@ -26,10 +26,11 @@ html {
     background: white;
     transition: opacity 0.75s, visibility 0.75s;
 }
-/* .lds-ring--hidden {
+.lds-ring--hidden {
     opacity: 0;
-    visibility: hidden;
-  } */
+    display:none;
+    /* visibility: hidden; */
+  }
   
   .lds-ring::after {
     content: "";
