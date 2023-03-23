@@ -25,10 +25,11 @@ html {
     justify-content: center;
     background: white;
     transition: opacity 0.75s, visibility 0.75s;
+    z-index: 100;
 }
 .lds-ring--hidden {
-    opacity: 0;
-    display:none;
+    /* opacity: 0; */
+    /* display:none; */
     /* visibility: hidden; */
   }
   
@@ -39,15 +40,17 @@ html {
     border: 15px solid #dddddd;
     border-top-color: #009578;
     border-radius: 50%;
-    animation: loading 0.75s ease infinite;
+    animation: loading 3s ease-in;
   }
   
   @keyframes loading {
     from {
-      transform: rotate(0turn);
+      transform: rotate(0deg);
     }
     to {
-      transform: rotate(1turn);
+      transform: rotate(360deg);
+      z-index:-100;
+
     }
   }
 
