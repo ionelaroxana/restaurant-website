@@ -80,6 +80,9 @@ html {
         margin-top:15px;
     }
 
+    .heart-animation a{
+        color:black;
+    }
 
     .big-container {
         background-color: #F2F2F2;
@@ -135,30 +138,12 @@ html {
 
     }
 
-     
-    /* @keyframes checkmarkslide {
-        from {
-            transform:translateX(0px);
-        }
-        to{
-            transform:translateX(-50px);
-        }
-    }
-
-    .checkmarkbox {
-        animation-duration:0.8s;
-    }
-
-    .rightToleft {
-        animation:checkmarkslide 1s ease-in;
-    } */
-
     .checkmark-container {
         margin:0px;
         position: absolute;
         float:right;
         right: -100px;
-        width: 100px;
+        width: 80px;
         height: 100%;
         margin: -50px 0px;
         border:2px;
@@ -168,8 +153,6 @@ html {
         transition: color 0.8s linear;
 
     }
-
-
 
     .food-item:hover .checkmark-container {
         display:block;
@@ -183,7 +166,7 @@ html {
         position:absolute;
         right:0;
         top:0;
-        width:10%;
+        width:8%;
         height:100%;
         background-color: #99E2D0;
         z-index:-1;
@@ -203,43 +186,29 @@ html {
 
     .food-item:hover .price {
         transition: all 0.8s linear;
-        /* right:0; */
-        transform:translateX(-37%);
+        transform:translateX(-32%);
         transform-origin: left;
     }
 
-    /* .checkmark-box {
-        position:relative;
-    } */
     .food-item:hover .circle {
-        width:60px;
-        height:60px;
+        width:35px;
+        height:35px;
         border-radius: 50%;
-        /* position:fixed; */
-        border:2px black;
-        background-color: red;
+        background-color: white;
+        margin-left:23px;
+        margin-top:12px;
     }
-
-    .checkmark-check {
-        rotation-point:50% 50%;
-        rotation:180deg;
+    .fa-sharp {
+        color:#99E2D0;
+        margin-left:10px;
+        margin-top:10px;
+        width:10px;
+        transform:rotate(0deg);
     }
-
-   @keyframes checkmarkrotate {
-        from {
-            transform:rotate(0turn);
-        }
-        to{
-            transform:rotate(0.5turn);
-        }
+    .food-item:hover .fa-sharp {
+        transform:rotate(360deg);
+        transition: transform 1s ease;
     }
-
-    .rotation {
-        animation:checkmarkrotate 1s;
-    } 
-
-
-
 
     .food-names {
         font-weight: bold;
