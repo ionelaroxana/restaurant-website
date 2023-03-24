@@ -11,78 +11,77 @@ html {
     -moz-box-sizing: inherit;
     box-sizing: inherit;
 }
-/* mobile (max-width:768px)  */
 
 
-.lds-ring {
-    position:fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    visibility:hidden;
-    z-index:1;
-    opacity:0.8;
-}
-
-  .lds-ring::after {
-    content: "";
-    width: 75px;
-    height: 75px;
-    border: 15px solid #dddddd;
-    border-top-color: #009578;
-    border-radius: 50%;
-    animation: loading 2s ease 1;
-  }
-  
-  @keyframes loading {
-    from {
-      transform: rotate(0turn);
-      visibility:visible;
-      z-index:100;
+    .lds-ring {
+        position:fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        visibility:hidden;
+        z-index:1;
+        opacity:0.8;
     }
-    to {
-      transform: rotate(2turn);
-      opacity:0;
-      visibility:hidden;
+
+    .lds-ring::after {
+        content: "";
+        width: 75px;
+        height: 75px;
+        border: 15px solid #dddddd;
+        border-top-color: #009578;
+        border-radius: 50%;
+        animation: loading 2s ease 1;
     }
-  }
-
-
-@keyframes loadingpage {
-    from {
-        transform: translateY(30px);
+    
+    @keyframes loading {
+        from {
+        transform: rotate(0turn);
+        visibility:visible;
+        z-index:100;
+        }
+        to {
+        transform: rotate(2turn);
+        opacity:0;
+        visibility:hidden;
+        }
     }
-     to {
-        transform:translateY(0);
-     }
-}
-.animate {
-    animation-duration: 1.5s;
-}
 
-.animate.animation-fast {
-    animation-duration: 0.7s;
-}
 
-.animate.animation-medium {
-    animation-duration: 0.9s;
-}
+    @keyframes loadingpage {
+        from {
+            transform: translateY(30px);
+        }
+        to {
+            transform:translateY(0);
+        }
+    }
+    .animate {
+        animation-duration: 1.5s;
+    }
 
-.animate.animation-slow {
-    animation-duration: 1.3s;
-}
+    .animate.animation-fast {
+        animation-duration: 0.7s;
+    }
 
-.animate.animation-slowest {
-    animation-duration:1.5s;
-}
-.loadingpage {
-    animation: loadingpage 1s ease-in normal;
-}
+    .animate.animation-medium {
+        animation-duration: 0.9s;
+    }
+
+    .animate.animation-slow {
+        animation-duration: 1.3s;
+    }
+
+    .animate.animation-slowest {
+        animation-duration:1.5s;
+    }
+    .loadingpage {
+        animation: loadingpage 1s ease-in normal;
+    }
 
     body {
         font-family: "Roboto", sans-serif;
@@ -270,14 +269,14 @@ html {
         margin-left:85%;
     }  
 
-    .heart-animation a:hover > .regular-heart{
+    .heart-animation a:active > .regular-heart{
         display:none;
         background: -webkit-linear-gradient(#FF79DA, #9356DC);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
     }
 
-    .heart-animation a:hover > .solid-heart{
+    .heart-animation a:active > .solid-heart{
         display:block;
         background: -webkit-linear-gradient(#FF79DA, #9356DC);
         -webkit-background-clip: text;
@@ -342,6 +341,20 @@ html {
         margin:0px 28px 25px 0px;
     }
 
+    .heart-animation a:hover > .regular-heart{
+        display:none;
+        background: -webkit-linear-gradient(#FF79DA, #9356DC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
+
+    .heart-animation a:hover > .solid-heart{
+        display:block;
+        background: -webkit-linear-gradient(#FF79DA, #9356DC);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
     .new-tag {
         margin-left:78%;
     }
@@ -407,6 +420,20 @@ html {
         height:280px;
         width:25%;
         margin:0px 28px 25px 0px;
+    }
+
+    .heart-animation a:hover > .regular-heart{
+        display:none;
+        background: -webkit-linear-gradient(#FF79DA, #9356DC);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
+
+    .heart-animation a:hover > .solid-heart{
+        display:block;
+        background: -webkit-linear-gradient(#FF79DA, #9356DC);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     .new-tag {
         margin-left:70%;
